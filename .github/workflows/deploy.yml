@@ -43,8 +43,7 @@ jobs:
       - name: Setup Pages
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './Riverwalk-Edu-Mockup-1/dist'
-
+          path: path: 'Riverwalk-Edu-Mockup-1/dist'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
