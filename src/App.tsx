@@ -22,19 +22,19 @@ import {
 } from "lucide-react";
 
 // Asset paths from the public folder
-const LOGO_SQUARE = "/rw_logo.png";
-const LOGO_HORIZONTAL = "/03_Logo_Horizontal.png";
-const PORTRAIT = "/portrait.png";
-const KAKAO_ICON = "/Kakao.png";
-const SHOES_IMAGE = "/RW_Shoes.png";
+const LOGO_SQUARE = "rw_logo.png";
+const LOGO_HORIZONTAL = "03_Logo_Horizontal.png";
+const PORTRAIT = "portrait.png";
+const KAKAO_ICON = "Kakao.png";
+const SHOES_IMAGE = "RW_Shoes.png";
 
 const TESTIMONIAL_IMAGES = {
-  DAYEON: "/Dayeon.png",
-  KYLE: "/Kyle.png",
-  MINSUN: "/Minsun.png",
-  PETER: "/Peter.png",
-  SUJIN: "/Sujin.png",
-  KEVIN: "/Kevin.png"
+  DAYEON: "Dayeon.png",
+  KYLE: "Kyle.png",
+  MINSUN: "Minsun.png",
+  PETER: "Peter.png",
+  SUJIN: "Sujin.png",
+  KEVIN: "Kevin.png"
 };
 
 const RWLogo = ({ className = "h-10 w-10", isHero = false }: { className?: string, isHero?: boolean }) => (
@@ -657,7 +657,7 @@ export default function App() {
   );
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/riverwalk-education">
       <ScrollToTop />
       <div className="min-h-screen bg-white">
         {/* Navigation */}
