@@ -2,4 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Your other custom styles can stay below this */
+@theme {
+  --color-brand-deep: #0f172a;
+  --color-brand-light: #06b6d4;
+}
