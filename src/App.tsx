@@ -5,7 +5,7 @@
 
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route, Link, useLocation } from "react-router-dom";
-import { motion, AnimatePresence } from "motion/react";
+import { motion, AnimatePresence } from "framer-motion";
 import { 
   BookOpen, 
   Users, 
@@ -657,7 +657,7 @@ export default function App() {
   );
 
   return (
-    <BrowserRouter basename="/riverwalk-education">
+    <BrowserRouter>
       <ScrollToTop />
       <div className="min-h-screen bg-white">
         {/* Navigation */}
@@ -773,4 +773,3 @@ export default function App() {
     </BrowserRouter>
   );
 }
-
