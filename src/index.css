@@ -1,8 +1,26 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 @theme {
   --color-brand-deep: #0f172a;
   --color-brand-light: #06b6d4;
+}
+
+/* Force Tailwind to read your App file layouts */
+@source "./App.tsx";
+@source "../index.html";
+
+/* Safety net layout wrapper for your content spacing */
+.section-padding {
+  width: 100%;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+@media (min-width: 768px) {
+  .section-padding {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
 }
