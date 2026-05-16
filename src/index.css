@@ -5,11 +5,17 @@
   --color-brand-light: #06b6d4;
 }
 
-/* Force Tailwind to read your App file layouts */
 @source "./App.tsx";
 @source "../index.html";
 
-/* Safety net layout wrapper for your content spacing */
+/* The Frosted Glass Navbar Fix */
+.glass {
+  background-color: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+}
+
+/* Safety net layout wrapper for content spacing */
 .section-padding {
   width: 100%;
   max-width: 80rem;
