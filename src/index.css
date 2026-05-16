@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-deep: #0f172a;
-  --color-brand-light: #06b6d4;
+  --color-brand-deep: #004070;
+  --color-brand-light: #59acf3;
 }
 
 @source "./App.tsx";
